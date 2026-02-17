@@ -36,9 +36,10 @@ export const About: FC = () => {
           <ResumeButton />
           {isMobile ? <H2>Навыки</H2> : <H2>Что использую</H2>}
         </section>
-        <div className="about__photo_container">
+        <picture className="about__photo_container">
+          <source srcSet="image.webp" type="image/webp" />
           <img className="about__photo" src={me.src} alt="photo" />
-        </div>
+        </picture>
       </section>
       <TextLine />
       {!isMobile && <Footer />}

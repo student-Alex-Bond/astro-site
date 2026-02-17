@@ -6,6 +6,6 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  output: 'static',
-  outDir: './docs',
+  base: '/astro-site',
+  site: 'https://student-alex-bond.github.io/astro-site/'
 });
