@@ -14,12 +14,12 @@ export const Footer: FC = () => {
       </div>
       {!isMobile && (
         <div className="footer-center">
-          <a href="/about-page" className="footer-link">
+          <a href="astro-site/about-page" className="footer-link">
             Обо мне
           </a>
           <span>/</span>
           <a
-            href="/projects-page"
+            href="astro-site/projects-page"
             className="footer-link"
           >
             Проекты

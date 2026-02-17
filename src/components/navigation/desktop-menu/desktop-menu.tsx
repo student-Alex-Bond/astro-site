@@ -14,19 +14,19 @@ export const DesktopMenu: FC = () => {
         <li className="fio">
           <a href="/">Александр Бондаренко</a>
         </li>
-        <li className={`nav-item about__me ${activeSection === "/about-page" ? "nav-item__active" : ""}`}>
-          <a href="/about-page">Обо мне</a>
+        <li className={`nav-item about__me ${activeSection === "astro-site/about-page" ? "nav-item__active" : ""}`}>
+          <a href="astro-site/about-page">Обо мне</a>
         </li>
         <span className="divider">/</span>
-        <li className={`nav-item project ${activeSection === "/projects-page" ? "nav-item__active" : ""}`}>
-          <a href="/projects-page">
+        <li className={`nav-item project ${activeSection === "astro-site/projects-page" ? "nav-item__active" : ""}`}>
+          <a href="astro-site/projects-page">
             Проекты
           </a>
         </li>
         <span className="divider">/</span>
         <li className="nav-item contact">
           <button className="menu-button">
-            <a href="/contacts-page">
+            <a href="astro-site/contacts-page">
               контакты <PiArrowSquareUpRight className="arrowDegree45" />
             </a>
           </button>
