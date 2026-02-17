@@ -1,0 +1,125 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Urbanist";
+  font-style: normal;
+  src: url("../assets/fonts/Urabanist.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-weight: 400;
+  font-family: "Urbanist-Bold";
+  font-style: normal;
+  src: url("../assets/fonts/Urbanist_Bold.woff2") format("woff2");
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist";
+}
+@media only screen and (max-width: 1240px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+  background-image: url("../assets/images/noisetexture.jpg");
+  background-color: rgb(15, 23, 42, 0.99);
+  background-blend-mode: overlay;
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.all-pages {
+  position: relative;
+  min-width: 100%;
+  overflow: hidden;
+}
+.pages-wrapper {
+  display: flex;
+  min-width: 100%;
+  transition: all 1s ease-out;
+  padding-top: 10rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: sticky;
+  height: 0.1rem;
+  bottom: 0;
+}
+.btn_controls a {
+  width: 11rem;
+  height: 6rem;
+  color: black;
+}
+
+.btn_controls,
+.btn_controls:active,
+.btn_controls:focus {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+@keyframes bounceNext {
+  from {
+    left: 2rem;
+  }
+  to {
+    left: 3rem;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+  }
+}
+.next {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    animation: bounceNext 0.3s ease infinite alternate;
+  }
+}
+@keyframes bounceBack {
+  from {
+    right: 2rem;
+  }
+  to {
+    right: 3rem;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+  }
+}
+.back {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    animation: bounceBack 0.3s ease infinite alternate;
+  }
+}

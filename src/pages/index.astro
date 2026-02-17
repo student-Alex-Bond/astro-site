@@ -1,0 +1,27 @@
+---
+import HomePage from "./home-page.astro";
+import MobilePage from "./mobile-page.astro";
+---
+
+<div class="layout">
+    <div class="desktop"><HomePage /></div>
+    <div class="mobile"><MobilePage /></div>
+
+    <style>
+        .desktop {
+            display: block;
+        }
+        .mobile {
+            display: none;
+        }
+
+        @media (max-width: 476px) {
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+        }
+    </style>
+</div>

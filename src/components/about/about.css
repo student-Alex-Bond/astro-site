@@ -1,0 +1,63 @@
+.about {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  color: rgb(229, 231, 235);
+  overflow: hidden;
+}
+
+.about__description {
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about__photo_container {
+  margin-top: 8rem;
+  position: relative;
+  justify-self: center;
+}
+.about__photo {
+  background-image: linear-gradient(
+    to right top,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255),
+    rgba(0, 0, 0, 0)
+  );
+  color: transparent;
+  object-fit: cover;
+  border-radius: 3rem;
+  border: 1.5rem solid rgb(229, 231, 235);
+  transform: rotate(-3deg);
+  transition: all 0.3s linear;
+  aspect-ratio: 5/6;
+  width: 35rem;
+  align-self: center;
+}
+.about__photo:hover {
+  transform: rotate(0deg);
+}
+
+@media only screen and (max-width: 475px) {
+  .about__description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 3rem;
+  }
+  .about__photo {
+    order: 1;
+  }
+  .about__container {
+    order: 2;
+  }
+  .about__photo_container {
+    align-self: center;
+  }
+}

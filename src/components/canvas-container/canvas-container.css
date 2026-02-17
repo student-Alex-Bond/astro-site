@@ -1,0 +1,15 @@
+.figures-container {
+  width: 50rem;
+  height: 50rem;
+  background-color: transparent;
+  margin-left: 5rem;
+  margin-top: 6rem;
+}
+@media only screen and (max-width: 475px) {
+  .figures-container {
+    margin: 0;
+    z-index: -1;
+    width: 70rem;
+    height: 70rem;
+  }
+}

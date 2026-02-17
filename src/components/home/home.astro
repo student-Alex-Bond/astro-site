@@ -1,0 +1,13 @@
+---
+import "./Home.css";
+
+import { Footer } from "../footer";
+import { PersonInfo } from "../person-info";
+import { CanvasContainer } from "../canvas-container";
+---
+
+<section class="page home">
+  <PersonInfo client:load />
+  <CanvasContainer client:load/>
+  <Footer />
+</section>
