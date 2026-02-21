@@ -1,7 +1,7 @@
 import { SiGmail } from "react-icons/si";
 import { type FC } from "react";
 import { FaGithub, FaTelegram } from "react-icons/fa";
-import "./Footer.css";
+import "./footer.css";
 import { useMediaQuery } from "react-responsive";
 export const Footer: FC = () => {
   const isMobile = useMediaQuery({ maxWidth: "475px" });
