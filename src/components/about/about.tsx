@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import "./About.css";
+import "./about.css";
 import { Footer } from "../footer";
 import { TextLine } from "./text-line";
 import { UnorderedList } from "./unordered-list";
